@@ -686,14 +686,14 @@
 
 .rodape .imagem {
   width: 120px;
-  margin-left: 47px;
+  margin: 10px;
 }
 
 .rodape .imgs{
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-right: 47px;
+  padding-right: 20px;
 }
 
 /* ====================================================== */
