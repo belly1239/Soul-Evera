@@ -1,0 +1,468 @@
+/* ===== Breakpoint 1: Tablets e Desktops Pequenos (< 1024px) ===== */
+@media (max-width: 1024px) {
+  /* --- index.html --- */
+  .cartas-vira {
+    flex-wrap: wrap; /* Permite que os cards que viram quebrem a linha */
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .lojas {
+    flex-wrap: wrap; /* Permite que os blocos de "loja" quebrem a linha */
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .loja {
+    width: 45%; /* Dois itens por linha */
+  }
+
+  .caracteristicas {
+    flex-wrap: wrap; /* Permite que os blocos de "caracteristica" quebrem a linha */
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .caracteristica {
+    width: 45%; /* Dois itens por linha */
+  }
+
+  .secaosuperior {
+    flex-wrap: wrap; /* Permite que os cards de imagem quebrem a linha */
+  }
+
+  /* --- lojas.html --- */
+  .cards {
+    padding: 20px; /* Adiciona algum preenchimento nas laterais da grade de cards */
+  }
+
+  /* ================================= */
+  /* NOVAS REGRAS: pedido.html         */
+  /* ================================= */
+  .pedido-container {
+    /* Em telas médias, diminui um pouco a largura máxima */
+    max-width: 90%;
+  }
+
+  .colunas-wrapper {
+    /* Permite que as colunas quebrem se não houver espaço */
+    flex-wrap: wrap;
+  }
+
+  /* ================================================= */
+  /* ATUALIZAÇÃO: lojas.html (Avaliações para Tablets) */
+  /* ================================================= */
+  .reviews-coluna-estatica,
+  .reviews-coluna-estatica-direita {
+    padding: 0; /* Remove padding fixo que quebrava o layout em tablets */
+  }
+}
+
+/* ===== Breakpoint 2: Tablets (Retrato) e Celulares Grandes (< 768px) ===== */
+@media (max-width: 768px) {
+  /* --- Geral (Ambas as páginas) --- */
+  .cabecalho {
+    flex-direction: column; /* Empilha os itens do cabeçalho */
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .navegacao .menu {
+    gap: 10px; /* Reduz o espaço entre os itens do menu */
+    margin: 10px 0;
+    flex-wrap: wrap; /* Permite que o menu quebre a linha se necessário */
+    justify-content: center;
+  }
+
+  .navegacao .menu .item {
+    font-size: 18px; /* Texto do menu ligeiramente menor */
+    padding: 10px;
+  }
+
+  .menu .underline {
+    /* O efeito de sublinhado animado não funciona bem com 
+       um layout flexível e quebra de linha. Vamos escondê-lo no celular. */
+    display: none;
+  }
+
+  .pesquisa {
+    width: 90%;
+    max-width: 400px;
+    justify-content: center;
+  }
+
+  .pesquisa .barra {
+    width: 100%; /* Faz a barra de pesquisa ocupar o espaço disponível */
+  }
+
+  .rodape {
+    flex-direction: column; /* Empilha os itens do rodapé */
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .rodape .texto {
+    text-align: center;
+  }
+
+  /* --- index.html --- */
+  .meio {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  .meio .titulo {
+    font-size: 2rem; /* Reduz o tamanho do título principal */
+  }
+
+  .meio .texto {
+    font-size: 1rem;
+  }
+
+  .estatisticas {
+    flex-direction: column; /* Empilha as estatísticas */
+    align-items: center;
+    gap: 25px;
+    margin: 30px auto;
+  }
+
+  .estatistica .num {
+    font-size: 2.5rem;
+  }
+
+  .produtos {
+    padding: 30px 15px;
+  }
+
+  .produtos .titulo,
+  .projetos-titulo .titulo {
+    font-size: 2rem;
+  }
+
+  .secaosuperior {
+    flex-direction: column; /* Empilha os cards de categoria de produto */
+    align-items: center;
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  .secaosuperior .card {
+    /* Este é o .card da index.html */
+    width: 90%;
+    max-width: 350px;
+    height: 200px; /* Dá um pouco mais de altura */
+  }
+
+  .lojas {
+    flex-direction: column; /* Empilha os blocos de características da loja */
+    align-items: center;
+    gap: 20px;
+    padding: 30px 15px;
+  }
+
+  .loja {
+    width: 90%; /* Faz os blocos de características ocuparem mais espaço */
+    max-width: 400px;
+  }
+
+  .container {
+    /* Para #galeria-impacto */
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  .container .titulo {
+    font-size: 2rem;
+  }
+
+  .caracteristicas {
+    flex-direction: column; /* Empilha os blocos de características do projeto */
+    align-items: center;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+
+  .caracteristica {
+    width: 90%; /* Faz os blocos ocuparem mais espaço */
+    max-width: 400px;
+  }
+
+  .cartas-vira {
+    flex-direction: column; /* Empilha os cards que viram */
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+
+  /* --- lojas.html --- */
+  .frase-principal {
+    padding: 30px 15px;
+  }
+
+  .frase-principal .titulo {
+    font-size: 2.2rem;
+  }
+
+  .frase-principal .botoes {
+    flex-direction: column; /* Empilha os botões de filtro da loja */
+    gap: 10px;
+    align-items: center;
+  }
+
+  .frase-principal .botoes .botao {
+    max-width: 300px;
+  }
+
+  .painel {
+    margin: 20px;
+  }
+
+  .grade-cosmeticos,
+  .grade-plantas,
+  .grade-roupas {
+    padding: 20px 10px; /* Reduz o preenchimento */
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .card-container {
+    /* O card tem 300px. Garantir que não estoure em telas menores */
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .lojas .card {
+    /* Este é o .card da lojas.html */
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card .frente,
+  .card .content {
+    /* Garante que o padding não quebre o layout de 300px */
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .cart-modal {
+    width: 100%; /* Faz o modal do carrinho ocupar a tela inteira */
+    max-width: 100%;
+  }
+
+  /* --- lojas.html (Avaliações) --- */
+  .reviews-layout-principal {
+    flex-direction: column; /* Empilha as 3 colunas de avaliação */
+    gap: 20px;
+  }
+  .reviews-coluna-estatica,
+  .reviews-coluna-estatica-direita {
+    padding: 0; /* Remove paddings laterais */
+    max-width: 100%;
+  }
+  .review-form {
+    max-width: 100%;
+  }
+  .reviews-container {
+    flex-direction: column; /* Empilha os comentários dinâmicos */
+    align-items: center;
+  }
+  .review-card {
+    width: 100%;
+    max-width: 430px; /* Mantém uma largura máxima razoável */
+  }
+
+  /* ================================= */
+  /* NOVAS REGRAS: pedido.html         */
+  /* ================================= */
+  .pedido-container {
+    margin: 20px 10px; /* Reduz margem e padding */
+    padding: 20px;
+    max-width: 100%; /* Ocupa a largura total */
+  }
+
+  .pedido-container h1 {
+    font-size: 2rem; /* Reduz título */
+  }
+
+  .colunas-wrapper {
+    flex-direction: column; /* Empilha Rastreamento e Pagamento */
+    gap: 20px;
+  }
+
+  .pedido-actions {
+    flex-direction: column; /* Empilha os botões de Suporte/Troca */
+    gap: 15px;
+  }
+
+  /* --- Timeline Vertical --- */
+  .timeline {
+    flex-direction: column; /* Muda para layout vertical */
+    align-items: flex-start; /* Alinha à esquerda */
+    padding-left: 20px; /* Espaço para a linha */
+  }
+
+  .timeline::before {
+    left: 10px; /* Posição da linha vertical */
+    top: 0;
+    width: 4px; /* Largura da linha */
+    height: 100%; /* Altura total */
+    background-color: #c4c4c4;
+  }
+
+  .timeline-step {
+    flex-direction: row; /* Itens em linha (ponto + texto) */
+    align-items: center;
+    width: 100%;
+    padding: 15px 0; /* Espaçamento vertical */
+    text-align: left;
+  }
+
+  .timeline-dot {
+    margin-bottom: 0; /* Remove margem inferior */
+    margin-right: 20px; /* Espaço entre o ponto e o texto */
+    border-width: 6px; /* "Corte" maior na linha */
+    background-color: #c4c4c4;
+  }
+
+  /* Cor Ativa da Timeline (Garantia de sobreposição) */
+  .timeline-step.active {
+    color: #3b583b;
+  }
+  .timeline-step.active .timeline-dot {
+    background-color: #3b583b;
+  }
+}
+
+/* ===== Breakpoint 3: Celulares Pequenos (< 480px) ===== */
+@media (max-width: 480px) {
+  /* --- index.html --- */
+  .meio .titulo {
+    font-size: 1.8rem;
+  }
+
+  .produtos .titulo,
+  .projetos-titulo .titulo,
+  .container .titulo {
+    font-size: 1.8rem;
+  }
+
+  .estatistica .num {
+    font-size: 2.2rem;
+  }
+
+  .caracteristica .titulo {
+    font-size: 1.4rem;
+  }
+
+  .caracteristica .texto {
+    font-size: 1rem;
+  }
+
+  .carrossel .img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* --- lojas.html --- */
+  .frase-principal .titulo {
+    font-size: 1.8rem;
+  }
+
+  .frase-principal .botoes {
+    text-align: center;
+  }
+
+  .frase-principal .botoes .botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%; /* Aumenta a largura dos botões */
+  }
+
+  .card .frente .titulo {
+    font-size: 24px;
+  }
+
+  .card .content .subtitulo {
+    font-size: 20px;
+  }
+
+  .card .content .texto {
+    font-size: 16px;
+  }
+
+  .rodape#Contact .texto {
+    font-size: 0.9rem;
+  }
+
+  /* ======================================================= */
+  /* ATUALIZAÇÃO: lojas.html (Avaliações para Celular Pequeno) */
+  /* ======================================================= */
+  .avaliacoes .titulo {
+    font-size: 2rem; /* Reduz o título principal das avaliações */
+  }
+  .review-form h3 {
+    font-size: 1.3em; /* Reduz o título do formulário */
+  }
+  .review-card .review-name {
+    font-size: 1em; /* Reduz o nome no card */
+  }
+  .review-card .review-body {
+    font-size: 0.9em; /* Reduz o texto do comentário */
+  }
+  .star-rating label {
+    font-size: 2.2em; /* Diminui um pouco as estrelas */
+  }
+
+  /* ================================= */
+  /* NOVAS REGRAS: pedido.html         */
+  /* ================================= */
+  .pedido-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .pedido-section h2 {
+    font-size: 1.3rem; /* Reduz subtítulos */
+  }
+
+  .pedido-btn {
+    font-size: 1rem; /* Botões de ação menores */
+    padding: 12px;
+  }
+
+  .timeline-step {
+    font-size: 0.85rem; /* Texto da timeline menor */
+  }
+
+  /* --- Modais de Pedido --- */
+  .return-item-card {
+    flex-direction: column; /* Empilha a imagem/info e os botões */
+    align-items: flex-start; /* Alinha tudo à esquerda */
+    gap: 10px;
+  }
+
+  .return-item-actions {
+    flex-direction: row; /* Botões "Trocar" e "Devolver" lado a lado */
+    width: 100%; /* Ocupa a largura total do card */
+    gap: 10px;
+  }
+
+  .return-item-btn {
+    flex: 1; /* Faz os dois botões terem o mesmo tamanho */
+    width: auto;
+  }
+
+  .support-contacts {
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .contact-item {
+    padding: 10px;
+  }
+}

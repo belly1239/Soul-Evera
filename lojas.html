@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOJA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/resete.css" />
+  <link rel="stylesheet" href="./src/css/loja.css" />
+  <link rel="stylesheet" href="./src/css/responsive.css" />
+</head>
+
+<body class="corpo">
+  <header class="cabecalho">
+    <a href="#" class="logo">
+      <img src="src/img/Frame 25.png" alt="" class="imagem" />
+    </a>
+
+    <nav class="navegacao">
+      <ul class="menu">
+        <li class="item">
+          <a href="./index.html" style="--i: 0">Home</a>
+        </li>
+        <li class="item">
+          <a href="#" style="--i: 1">Store</a>
+        </li>
+        <li class="item">
+          <a href="#Projects" style="--i: 2">Projects</a>
+        </li>
+        <li class="item">
+          <a href="#Contact" style="--i: 3">Feedback</a>
+        </li>
+        <span class="underline"></span>
+      </ul>
+    </nav>
+
+    <div class="pesquisa">
+      <input class="barra" type="texto" placeholder="Pesquisar" />
+      <img class="carrinho" src="./src/img/carrinho.png" alt="">
+    </div>
+  </header>
+
+  <main class="principal">
+    <section class="frase-principal">
+      <h1 class="titulo">SHOPPING</h1>
+      <p class="texto">
+        Cada detalhe pensado para surpreender.<br />Bem-Vindo(a) à sua nova
+        esperiência de compra!
+      </p>
+      <div class="botoes">
+        <a href="#grade-cosmeticos">
+          <button class="botao">Cosméticos</button>
+        </a>
+        <a href="#grade-plantas">
+          <button class="botao">Plantas</button>
+        </a>
+        <a href="#grade-roupas">
+          <button class="botao">Roupas</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="painel animate-on-scroll" id="grade-cosmeticos">
+      <h1 class="titulo">COSMÉTICOS</h1>
+    </section>
+
+    <section class="grade-cosmeticos animate-on-scroll">
+      <div class="cards">
+        <div class="card-container">
+          <div class="card" data-id="1" data-name="Sérum" data-price="45,70" data-img="./src/img/secum.png">
+            <div class="frente">
+              <img src="./src/img/secum.png" alt="Sérum" class="imagem" />
+              <h1 class="titulo">Sérum</h1>
+              <div class="precos">
+                <span class="preco">R$ 45,70</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Sérum</h2>
+              <p class="texto">
+                É formulado com ingredientes de origem vegetal, cultivados de
+                forma ética e extraídos sem agredir o meio ambiente. Rico em
+                antioxidantes, vitaminas e ativos naturals.
+              </p>
+              <h3 class="add">Adicionar Sérum ao carrinho</h3>
+              <button aria-label="Adicionar Sérum ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="2" data-name="Creme Corporal" data-price="48,00" data-img="./src/img/creco.png">
+            <div class="frente">
+              <img src="./src/img/creco.png" alt="Creme Corporal" class="imagem" />
+              <h1 class="titulo">Creme Corporal</h1>
+              <div class="precos">
+                <span class="preco">R$ 48,00</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Creme Corporal</h2>
+              <p class="texto">
+                Desenvolvido com ingredientes naturais e de origem vegetal que
+                restauram a elasticidade da pele e mantêm a hidratação ao
+                longo do dia.
+              </p>
+              <h3 class="add">Adicionar Creme Corporal ao carrinho</h3>
+              <button aria-label="Adicionar Creme Corporal ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="3" data-name="Creme de Mão" data-price="34,99"
+            data-img="./src/img/creme_de_mao.png">
+            <div class="frente">
+              <img src="./src/img/creme_de_mao.png" alt="Creme de Mão" class="imagem" />
+              <h1 class="titulo">Creme de Mão</h1>
+              <div class="precos">
+                <span class="preco">R$ 34,99</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Creme de Mão</h2>
+              <p class="texto">
+                Combina ingredientes naturais e regenerativos que nutre
+                profundamente a pele. Formulado com óleos vegetais e ativos
+                botânicos.
+              </p>
+              <h3 class="add">Adicionar Creme de Mão ao carrinho</h3>
+              <button aria-label="Adicionar Creme de Mão ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="4" data-name="Creme de Rosto" data-price="40,00" data-img="./src/img/crero.png">
+            <div class="frente">
+              <img src="./src/img/crero.png" alt="Creme de Rosto" class="imagem" />
+              <h1 class="titulo">Creme de Rosto</h1>
+              <div class="precos">
+                <span class="preco">R$ 40,00</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Creme de Rosto</h2>
+              <p class="texto">
+                Formulado com ingredientes naturais, orgânicos selecionados
+                para nutrir seu rosto. Sua textura leve e de rápida absorção é
+                perfeita para todos os tipos de pele.
+              </p>
+              <h3 class="add">Adicionar Creme de Rosto ao carrinho</h3>
+              <button aria-label="Adicionar Creme de Rosto ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="5" data-name="Óleo Corporal" data-price=" 50,00" data-img="./src/img/ole.png">
+            <div class="frente">
+              <img src="./src/img/ole.png" alt="Óleo Corporal" class="imagem" />
+              <h1 class="titulo">Óleo Corporal</h1>
+              <div class="precos">
+                <span class="preco">R$ 50,00</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Óleo Corporal</h2>
+              <p class="texto">
+                Elaborado com uma mistura exclusiva de óleos vegetais 100%
+                naturais e extraídos de fontes renováveis.
+              </p>
+              <h3 class="add">Adicionar Óleo Corporal ao carrinho</h3>
+              <button aria-label="Adicionar Óleo Corporal ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="6" data-name="Sabonete" data-price=" 23,80" data-img="./src/img/sa2.png">
+            <div class="frente">
+              <img src="./src/img/sa2.png" alt="Sabonete" class="imagem" />
+              <h1 class="titulo">Sabonete</h1>
+              <div class="precos">
+                <span class="preco">R$ 23,80</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Sabonete</h2>
+              <p class="texto">
+                Combina ingredientes naturais e biodegradáveis para uma
+                limpeza eficaz e suave, que protege a barreira natural da pele
+                sem ressecar.
+              </p>
+              <h3 class="add">Adicionar Sabonete ao carrinho</h3>
+              <button aria-label="Adicionar Sabonete ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="7" data-name="Kit-cabelo" data-price=" 76,90" data-img="./src/img/shampoo2.png">
+            <div class="frente">
+              <img src="./src/img/shampoo2.png" alt="Kit-cabelo" class="imagem" />
+              <h1 class="titulo">Kit-cabelo</h1>
+              <div class="precos">
+                <span class="preco">R$ 76,90</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Kit-cabelo</h2>
+              <p class="texto">
+                Formulado com ingredientes naturais, veganos e livres de
+                químicos agressivos. Pensado para nutrir, fortalecer e
+                restaurar seus fios.
+              </p>
+              <h3 class="add">Adicionar Kit-cabelo ao carrinho</h3>
+              <button aria-label="Adicionar Kit-cabelo ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="8" data-name="Shampoo de Pet" data-price=" 48,80" data-img="./src/img/pet2.png">
+            <div class="frente">
+              <img src="./src/img/pet2.png" alt="Shampoo de Pet" class="imagem" />
+              <h1 class="titulo">Shampoo de Pet</h1>
+              <div class="precos">
+                <span class="preco">R$ 48,80</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Shampoo de Pet</h2>
+              <p class="texto">
+                Shampoo para cães e gatos, ideal para quem valoriza estilo e
+                sustentabilidade. PH balanceado, pensado para a pele sensível
+                de pets.
+              </p>
+              <h3 class="add">Adicionar Shampoo de Pet ao carrinho</h3>
+              <button aria-label="Adicionar Shampoo de Pet ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="9" data-name="Vitamina de Rosto" data-price="38,55"
+            data-img="./src/img/creme3.png">
+            <div class="frente">
+              <img src="./src/img/creme3.png" alt="Vitamina de Rosto" class="imagem" />
+              <h1 class="titulo">Vitamina de Rosto</h1>
+              <div class="precos">
+                <span class="preco">R$ 38,55</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Vitamina de Rosto</h2>
+              <p class="texto">
+                Formulada com uma combinação potente de ativos naturais. Ela
+                combate os sinais de cansaço e envelhecimento.
+              </p>
+              <h3 class="add">Adicionar Vitamina de Rosto ao carrinho</h3>
+              <button aria-label="Adicionar Vitamina de Rosto ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="painel animate-on-scroll" id="grade-plantas">
+      <h1 class="titulo">PLANTAS</h1>
+    </section>
+
+    <section class="grade-plantas animate-on-scroll">
+      <div class="cards">
+        <div class="card-container">
+          <div class="card" data-id="10" data-name="Lavanda" data-price="66,90" data-img="./src/img/lavanda 1.png">
+            <div class="frente">
+              <img src="./src/img/lavanda 1.png" alt="Lavanda" class="imagem" />
+              <h1 class="titulo">Lavanda</h1>
+              <div class="precos">
+                <span class="preco">R$ 66,90</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Lavanda</h2>
+              <p class="texto">
+                Lavanda tem efeito calmante e relaxante, melhora o sono,
+                anti-inflamatória e analgésico.
+              </p>
+              <h3 class="add">Adicionar Lavanda ao carrinho</h3>
+              <button aria-label="Adicionar Lavanda ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="11" data-name="Espada de São Jorge" data-price="55,40"
+            data-img="./src/img/espadadesaojorge 1.png">
+            <div class="frente">
+              <img src="./src/img/espadadesaojorge 1.png" alt="Espada de São Jorge" class="imagem" />
+              <h1 class="titulo">Espada de São Jorge</h1>
+              <div class="precos">
+                <span class="preco">R$ 55,40</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Espada de São Jorge</h2>
+              <p class="texto">
+                Espada de são Jorge purifica o ar removendo toxinas e
+                liberando oxigênio a noite.
+              </p>
+              <h3 class="add">Adicionar Espada de São Jorge ao carrinho</h3>
+              <button aria-label="Adicionar Espada de São Jorge ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="12" data-name="Lírio da paz" data-price="47,80"
+            data-img="./src/img/lirio da paz 1.png">
+            <div class="frente">
+              <img src="./src/img/lirio da paz 1.png" alt="Lírio da paz" class="imagem" />
+              <h1 class="titulo">Lírio da paz</h1>
+              <div class="precos">
+                <span class="preco">R$ 47,80</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Lírio da paz</h2>
+              <p class="texto">
+                Lírio da paz purifica o ar removendo a amônia, benzeno e
+                formaldeído, ajuda a aumentar a umidade do ambiente.
+              </p>
+              <h3 class="add">Adicionar Lírio da paz ao carrinho</h3>
+              <button aria-label="Adicionar Lírio da paz ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="13" data-name="Jibóia" data-price="35,40" data-img="./src/img/jiboia 1.png">
+            <div class="frente">
+              <img src="./src/img/jiboia 1.png" alt="Jibóia" class="imagem" />
+              <h1 class="titulo">Jibóia</h1>
+              <div class="precos">
+                <span class="preco">R$ 35,40</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Jibóia</h2>
+              <p class="texto">
+                Jibóia remove benzeno e formaldeído do ambiente melhorando a
+                qualidade do ar.
+              </p>
+              <h3 class="add">Adicionar Jibóia ao carrinho</h3>
+              <button aria-label="Adicionar Jibóia ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="14" data-name="Cacto macarrão" data-price="34,99"
+            data-img="./src/img/cactomacarrao 1.png">
+            <div class="frente">
+              <img src="./src/img/cactomacarrao 1.png" alt="Cacto macarrão" class="imagem" />
+              <h1 class="titulo">Cacto macarrão</h1>
+              <div class="precos">
+                <span class="preco">R$ 34,99</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Cacto macarrão</h2>
+              <p class="texto">
+                Cacto macarrão melhora a energia do lugar pois absorve energia
+                negativa e contribui levemente para a purificação do ar.
+              </p>
+              <h3 class="add">Adicionar Cacto macarrão ao carrinho</h3>
+              <button aria-label="Adicionar Cacto macarrão ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="15" data-name="Samambaia" data-price="53,60" data-img="./src/img/samambaia 1.png">
+            <div class="frente">
+              <img src="./src/img/samambaia 1.png" alt="Samambaia" class="imagem" />
+              <h1 class="titulo">Samambaia</h1>
+              <div class="precos">
+                <span class="preco">R$ 53,60</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Samambaia</h2>
+              <p class="texto">
+                Filtra toxinas do ambiente como formaldeído e xíleno.
+              </p>
+              <h3 class="add">Adicionar Samambaia ao carrinho</h3>
+              <button aria-label="Adicionar Samambaia ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="16" data-name="Babosa" data-price="15,80" data-img="./src/img/babosa 1.png">
+            <div class="frente">
+              <img src="./src/img/babosa 1.png" alt="Babosa" class="imagem" />
+              <h1 class="titulo">Babosa</h1>
+              <div class="precos">
+                <span class="preco">R$ 15,80</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Babosa</h2>
+              <p class="texto">
+                Remove toxinas do ar, Libera oxigênio à noite, ajuda na
+                Cicatrização de feridas e queimaduras leves, Hidratação da
+                pele e cabelo.
+              </p>
+              <h3 class="add">Adicionar Babosa ao carrinho</h3>
+              <button aria-label="Adicionar Babosa ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="17" data-name="Bamboo" data-price="80,10" data-img="./src/img/bamboo 1.png">
+            <div class="frente">
+              <img src="./src/img/bamboo 1.png" alt="Bamboo" class="imagem" />
+              <h1 class="titulo">Bamboo</h1>
+              <div class="precos">
+                <span class="preco">R$ 80,10</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Bamboo</h2>
+              <p class="texto">
+                Ajuda a remover poluentes do ambiente Melhorando a qualidade
+                do ar em espaços fechados, libera oxigenio durante a noite.
+              </p>
+              <h3 class="add">Adicionar Bamboo ao carrinho</h3>
+              <button aria-label="Adicionar Bamboo ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="18" data-name="Palmeira Areca" data-price="105,99"
+            data-img="./src/img/palmeiraareca 1.png">
+            <div class="frente">
+              <img src="./src/img/palmeiraareca 1.png" alt="Palmeira Areca" class="imagem" />
+              <h1 class="titulo">Palmeira Areca</h1>
+              <div class="precos">
+                <span class="preco">R$ 105,99</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Palmeira Areca</h2>
+              <p class="texto">
+                A palmeira areca melhora a qualidade do ar interno, remove
+                toxinas como formaldeido, xileno e tolueno.
+              </p>
+              <h3 class="add">Adicionar Palmeira Areca ao carrinho</h3>
+              <button aria-label="Adicionar Palmeira Areca ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="painel animate-on-scroll" id="grade-roupas">
+      <h1 class="titulo">ROUPAS</h1>
+    </section>
+
+    <section class="grade-roupas animate-on-scroll">
+      <div class="cards">
+        <div class="card-container">
+          <div class="card" data-id="19" data-name="Camiseta" data-price="79,99" data-img="./src/img/camiseta1.png">
+            <div class="frente">
+              <img src="./src/img/camiseta1.png" alt="Camiseta" class="imagem" />
+              <h1 class="titulo">Camiseta</h1>
+              <div class="precos">
+                <span class="preco">R$ 79,99</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Camiseta</h2>
+              <p class="texto">
+                Feita com materiais ecológicos e processos responsáveis que
+                respeitam o meio ambiente. Produzida a partir de algodão
+                orgânico.
+              </p>
+              <h3 class="add">Adicionar Camiseta ao carrinho</h3>
+              <button aria-label="Adicionar Camiseta ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="20" data-name="Camiseta" data-price="79,99" data-img="./src/img/camiseta2.png">
+            <div class="frente">
+              <img src="./src/img/camiseta2.png" alt="Camiseta" class="imagem" />
+              <h1 class="titulo">Camiseta</h1>
+              <div class="precos">
+                <span class="preco">R$ 79,99</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Camiseta</h2>
+              <p class="texto">
+                Confeccionada com tecidos ecológicos, a nossa Blusa
+                Sustentável Branca é feita em algodão orgânico certificado,
+                cultivado sem agrotóxicos ou produtos químicos nocivos.
+              </p>
+              <h3 class="add">Adicionar Camiseta ao carrinho</h3>
+              <button aria-label="Adicionar Camiseta ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="21" data-name="EcoBag" data-price="45,00" data-img="./src/img/ecobag.png">
+            <div class="frente">
+              <img src="./src/img/ecobag.png" alt="EcoBag" class="imagem" />
+              <h1 class="titulo">EcoBag</h1>
+              <div class="precos">
+                <span class="preco">R$ 45,00</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">EcoBag</h2>
+              <p class="texto">
+                Feita com material ecológico, ideal para quem busca
+                praticidade no dia a dia sem abrir mão do cuidado com o meio
+                ambiente.
+              </p>
+              <h3 class="add">Adicionar EcoBag ao carrinho</h3>
+              <button aria-label="Adicionar EcoBag ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="22" data-name="Camiseta" data-price="79,99" data-img="./src/img/camiseta5.png">
+            <div class="frente">
+              <img src="./src/img/camiseta5.png" alt="Camiseta" class="imagem" />
+              <h1 class="titulo">Camiseta</h1>
+              <div class="precos">
+                <span class="preco">R$ 79,99</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Camiseta</h2>
+              <p class="texto">
+                Com um tom neutro e versátil, a Blusa Sustentável Bege é
+                produzida com materiais de baixo impacto. Seu corte clean e
+                caimento fluido tornam a peça ideal.
+              </p>
+              <h3 class="add">Adicionar Camiseta ao carrinho</h3>
+              <button aria-label="Adicionar Camiseta ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="23" data-name="Camiseta" data-price="79,99" data-img="./src/img/camiseta6.png">
+            <div class="frente">
+              <img src="./src/img/camiseta6.png" alt="Camiseta" class="imagem" />
+              <h1 class="titulo">Camiseta</h1>
+              <div class="precos">
+                <span class="preco">R$ 79,99</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Camiseta</h2>
+              <p class="texto">
+                Produzida com fibras de linho ecológico. O tom verde reforca a
+                conexão com a natureza traz um toque de cor sem perder a
+                versatilidade.
+              </p>
+              <h3 class="add">Adicionar Camiseta ao carrinho</h3>
+              <button aria-label="Adicionar Camiseta ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="24" data-name="Camiseta" data-price="79,99" data-img="./src/img/camiseta4.png">
+            <div class="frente">
+              <img src="./src/img/camiseta4.png" alt="Camiseta" class="imagem" />
+              <h1 class="titulo">Camiseta</h1>
+              <div class="precos">
+                <span class="preco">R$ 79,99</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Camiseta</h2>
+              <p class="texto">
+                A Blusa Sustentável Bege com estampa de ramos florais é feita
+                com tecidos eco-friendly como algodão orgânico e viscose de
+                fontes renováveis.
+              </p>
+              <h3 class="add">Adicionar Camiseta ao carrinho</h3>
+              <button aria-label="Adicionar Camiseta ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="25" data-name="Camiseta" data-price="79,99" data-img="./src/img/camisa0.png">
+            <div class="frente">
+              <img src="./src/img/camisa0.png" alt="Camiseta" class="imagem" />
+              <h1 class="titulo">Camiseta</h1>
+              <div class="precos">
+                <span class="preco">R$ 79,99</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Camiseta</h2>
+              <p class="texto">
+                Produzida com malha reciclada, ela garante um toque macio. A
+                estampa frontal com o nome e logotipo da marca reforça a
+                identidade e o compromisso com a moda consciente.
+              </p>
+              <h3 class="add">Adicionar Camiseta ao carrinho</h3>
+              <button aria-label="Adicionar Camiseta ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="26" data-name="Vestido" data-price="99,60" data-img="./src/img/vestido.png">
+            <div class="frente">
+              <img src="./src/img/vestido.png" alt="Vestido" class="imagem" />
+              <h1 class="titulo">Vestido</h1>
+              <div class="precos">
+                <span class="preco">R$ 99,60</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Vestido</h2>
+              <p class="texto">
+                Confeccionado com tecidos sustentáveis como algodão orgânico e
+                modal de fontes renováveis, perfeito para quem busca conforto
+                com propósito.
+              </p>
+              <h3 class="add">Adicionar Vestido ao carrinho</h3>
+              <button aria-label="Adicionar Vestido ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" data-id="27" data-name="Vestido" data-price="99,60" data-img="./src/img/vestido2.png">
+            <div class="frente">
+              <img src="./src/img/vestido2.png" alt="Vestido" class="imagem" />
+              <h1 class="titulo">Vestido</h1>
+              <div class="precos">
+                <span class="preco">R$ 99,60</span>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="subtitulo">Vestido</h2>
+              <p class="texto">
+                Confeccionado com tecidos ecológicos, como algodão orgânico e
+                viscose de reflorestamento, oferece um caimento suave e
+                confortável.
+              </p>
+              <h3 class="add">Adicionar Vestido ao carrinho</h3>
+              <button aria-label="Adicionar Vestido ao carrinho" class="btn">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="avaliacoes" id="avaliacoes">
+      <h2 class="titulo">Avaliações de Clientes</h2>
+
+      <div class="reviews-layout-principal">
+
+        <div class="reviews-coluna-estatica">
+          <div class="review-card">
+            <div class="review-header">
+              <span class="review-name">Ana Júlia</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-body">
+              Adorei os produtos! A entrega foi super rápida e tudo veio bem
+              embalado. As plantas são lindas!
+            </p>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <span class="review-name">Carol Mendes</span>
+              <span class="review-stars">★★★★☆</span>
+            </div>
+            <p class="review-body">
+              Os cosméticos são de ótima qualidade, minha pele melhorou muito.
+              Só a embalagem do sérum que veio um pouco amassada.
+            </p>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <span class="review-name">Daniel P.</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-body">
+              O cheiro do creme corporal é divino! Já quero comprar de novo.
+            </p>
+          </div>
+        </div>
+
+        <form id="reviewForm" class="review-form">
+          <h3>Deixe sua avaliação</h3>
+          <div class="form-group">
+            <label for="reviewName">Seu nome:</label>
+            <input type="text" id="reviewName" placeholder="Digite seu nome" required />
+          </div>
+          <div class="form-group">
+            <label>Sua nota:</label>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5" required /><label for="star5"
+                title="5 estrelas">★</label>
+              <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 estrelas">★</label>
+              <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 estrelas">★</label>
+              <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 estrelas">★</label>
+              <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 estrela">★</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="reviewText">Sua opinião:</label>
+            <textarea id="reviewText" rows="5" placeholder="Conte-nos sobre sua experiência..." required></textarea>
+          </div>
+          <button type="submit" class="botao-avaliacao">
+            Enviar Avaliação
+          </button>
+        </form>
+
+        <div class="reviews-coluna-estatica-direita">
+          <div class="review-card">
+            <div class="review-header">
+              <span class="review-name">Ana Gonçalves</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-body">
+              Comprei uma camiseta e uma ecobag. O tecido é maravilhoso e a
+              estampa é linda. Virei fã!
+            </p>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <span class="review-name">Luara Gabriela</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-body">
+              Atendimento impecável e produtos que cumprem o que prometem. A
+              filosofia da loja é um bônus. Recomendo 100%.
+            </p>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <span class="review-name">Paulo Rosa</span>
+              <span class="review-stars">★★★★☆</span>
+            </div>
+            <p class="review-body">
+              A Jibóia chegou saudável e bem maior do que eu esperava. Ótimo
+              custo-benefício.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <h3 class="titulo-dinamico">Comentários Recentes</h3>
+
+      <div id="reviewsContainer" class="reviews-container">
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="cart-modal" id="cartModal">
+    <div class="cart-header">
+      <h2>Seu Carrinho</h2>
+      <button id="closeCart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <h3>Total: R$ <span id="cartTotal">0,00</span></h3>
+
+      <div class="cart-payment-method">
+        <h4>Forma de Pagamento:</h4>
+        <div class="payment-options">
+          <label>
+            <input type="radio" name="paymentMethod" value="Pix" checked />
+            <span>Pix</span>
+          </label>
+          <label>
+            <input type="radio" name="paymentMethod" value="Crédito" />
+            <span>Crédito</span>
+          </label>
+          <label>
+            <input type="radio" name="paymentMethod" value="Débito" />
+            <span>Débito</span>
+          </label>
+        </div>
+      </div>
+      <button id="checkoutBtn">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <div id="successModal" class="success-modal">
+    <div class="success-modal-content">
+      <span class="close-success-modal" id="closeSuccessModal">&times;</span>
+
+      <div id="success-details">
+        <h3>COMPRA REALIZADA COM SUCESSO!</h3>
+        <p>Obrigado por comprar conosco. Aqui está o seu pedido:</p>
+        <p class="success-payment-info">
+          Pagamento via: <strong id="successPaymentMethod"></strong>
+        </p>
+        <div id="successItemsList" class="success-items-list"></div>
+        <p class="agra">Agradecemos pela preferência e esperamos te ver novamente! 💚</p>
+        
+
+        <div class="success-actions">
+          <a href="./pedido.html" id="trackOrderBtn" class="success-btn track-btn">
+             Acompanhar pedido
+          </a>
+          <a href="./lojas.html" id="returnToStoreBtn" class="success-btn store-btn">
+             Voltar à loja
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="emptyCartModal" class="success-modal">
+    <div class="success-modal-content">
+      <span class="close-success-modal" id="closeEmptyCartModal">&times;</span>
+      <h3 style="
+          text-transform: uppercase;
+          font-size: 1.2em;
+          line-height: 1.5;
+          margin-top: 15px;
+        ">
+        Seu carrinho está vazio!<br />Por favor, adicione um item e aproveite a experiência!
+      </h3>
+    </div>
+  </div>
+
+  <div id="confirmationModal" class="success-modal">
+    <div class="success-modal-content">
+      <span class="close-success-modal" id="closeConfirmationModal">&times;</span>
+      <h3>
+        Confirmar sua compra?
+      </h3>
+      <p>
+        Você deseja realmente finalizar este pedido?
+      </p>
+
+      <div class="confirmation-buttons">
+        <button id="cancelCheckoutBtn" class="confirmation-btn cancel-btn">
+          CANCELAR
+        </button>
+        <button id="confirmCheckoutBtn" class="confirmation-btn confirm-btn">
+          CONFIRMAR
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape" id="Contact">
+    <p class="texto">© 2025 Soul of Evera. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="./src/js/painel.js"></script>
+</body>
+
+</html>

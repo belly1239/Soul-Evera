@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+html {
+  background-color: #2e3b29;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  /* background-color: #dad7cd; */
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. Animação de SAÍDA (Mais rápida e suave) */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0); /* Posição inicial */
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px); /* Desliza 10px para cima */
+  }
+}
+
+body.corpo.fade-out {
+  /* Duração: 0.2s | Easing: ease-out (inicia rápido) */
+  animation: fadeOut 0.2s ease-out forwards;
+}
+
+/* 2. Classes para ANIMAÇÃO AO ROLAR */
+
+/* Esta é a classe base que esconde os elementos */
+/* O usuário irá adicionar esta classe no HTML */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px); /* Começa 20px abaixo */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Esta classe será adicionada pelo JS para TORNAR VISÍVEL */
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* REMOÇÃO IMPORTANTE: 
+   Apague o @keyframes fadeIn E a regra 'body.corpo { animation: fadeIn... }' 
+   do seu CSS. O código acima já substitui tudo o que é necessário.
+*/

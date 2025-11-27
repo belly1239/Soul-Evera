@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acompanhar Pedido - Soul of Evera</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/resete.css" />
+  <link rel="stylesheet" href="./src/css/loja.css" />
+  <link rel="stylesheet" href="./src/css/pedido.css" />
+  <link rel="stylesheet" href="./src/css/responsive.css">
+        
+</head>
+
+<body class="corpo">
+
+  <header class="cabecalho">
+    <a href="./index.html" class="logo">
+      <img src="src/img/Frame 25.png" alt="" class="imagem" />
+    </a>
+    <nav class="navegacao">
+      <ul class="menu">
+        <li class="item">
+          <a href="./index.html" style="--i: 0">Home</a>
+        </li>
+        <li class="item">
+          <a href="./lojas.html" style="--i: 1">Store</a>
+        </li>
+        <li class="item">
+          <a href="#" style="--i: 2">Projects</a>
+        </li>
+        <li class="item">
+          <a href="#" style="--i: 3">Feedback</a>
+        </li>
+        <span class="underline"></span>
+      </ul>
+    </nav>
+    <div class="pesquisa">
+      <input class="barra" type="texto" placeholder="Pesquisar" />
+      <img class="carrinho" src="./src/img/carrinho.png" alt="" />
+    </div>
+  </header>
+
+  <main class="pedido-container">
+    <h1>Acompanhe seu Pedido</h1>
+    <p class="pedido-subtitulo">
+      Pedido <strong id="orderIdText">#...</strong> - Realizado em
+      <span id="orderDateText">...</span>
+    </p>
+
+    <div class="pedido-section timeline-section">
+      <div class="timeline">
+        <div class="timeline-step active">
+          <div class="timeline-dot"></div>
+          <span>Pedido Recebido</span>
+        </div>
+        <div class="timeline-step active">
+          <div class="timeline-dot"></div>
+          <span>Em Preparação</span>
+        </div>
+        <div class="timeline-step active">
+          <div class="timeline-dot"></div>
+          <span>Enviado</span>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot"></div>
+          <span>Em Trânsito</span>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot"></div>
+          <span>Entregue</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="colunas-wrapper">
+      <div class="pedido-section">
+        <h2>Rastreamento e Entrega</h2>
+        <p>
+          Transportadora: <strong>Correios</strong>
+        </p>
+        <p>
+          Código de Rastreamento:
+          <a href="#" class="track-link">BR123456789BR</a>
+        </p>
+        <p>
+          Estimativa de Entrega:
+          <strong>Chegará entre 30 de novembro e 04 de dezembro</strong>
+        </p>
+        <p>
+          Endereço:
+          <strong>Rua Anardino De Paula Cândido, 80 - Santo Antônio, Cachoeira de Minas - MG</strong>
+        </p>
+      </div>
+
+      <div class="pedido-section">
+        <h2>Pagamento</h2>
+        <p>
+          Status: <strong style="color: #588157">Pagamento Aprovado</strong>
+        </p>
+        <p>Método: <strong id="paymentMethodText">...</strong></p>
+        <p>Total: <strong id="paymentTotalText">R$ ...</strong></p>
+      </div>
+    </div>
+
+    <div class="pedido-section">
+      <h2>Itens do Pedido</h2>
+
+      <div id="orderItemsContainer">
+        <p>Carregando itens...</p>
+      </div>
+
+    </div>
+
+    <div class="pedido-section pedido-actions">
+      <a href="#" class="pedido-btn suporte" id="openSupportModalBtn">❓ Falar com o suporte</a>
+      <a href="#" class="pedido-btn troca" id="openReturnModalBtn">🔁 Solicitar troca ou devolução</a>
+    </div>
+  </main>
+
+  <div id="supportModal" class="success-modal">
+    <div class="success-modal-content">
+      <span class="close-success-modal" id="closeSupportModal">&times;</span>
+      <h3>Fale Conosco</h3>
+      <p class="texto">
+        Estamos aqui para ajudar! Entre em contato por um dos canais abaixo.
+      </p>
+
+      <div class="support-contacts">
+        <div class="contact-item">
+          <strong>WhatsApp:</strong>
+          <span>(35) 997090156</span>
+        </div>
+        <div class="contact-item">
+          <strong>E-mail:</strong>
+          <span>suporte@soulevera.com</span>
+        </div>
+        <div class="contact-item">
+          <strong>Horário de Atendimento do Suporte:</strong>
+          <span>Seg. a Sex. das 09h às 18h</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="returnModal" class="success-modal">
+    <div class="success-modal-content">
+      <span class="close-success-modal" id="closeReturnModal">&times;</span>
+
+      <div id="return-action-view">
+        <h3>Selecione o item para a ação:</h3>
+        <p>Escolha "Trocar" ou "Devolver" para o produto desejado.</p>
+        
+        <div id="return-items-list">
+          </div>
+      </div>
+
+      <div id="return-troca-success" style="display: none; padding: 20px 0">
+        </div>
+
+      <div id="return-devolucao-success" style="display: none; padding: 20px 0">
+        <h3 style="
+            text-transform: none;
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #588157;
+          ">
+          Produto devolvido com sucesso.
+        </h3>
+        <p style="margin-top: 15px">
+          Agradecemos por entrar em contato. O processo foi registrado e
+          finalizado conforme solicitado.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape" id="Contact">
+    <p class="texto">© 2025 Soul of Evera. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="./src/js/painel.js"></script>
+</body>
+
+</html>
